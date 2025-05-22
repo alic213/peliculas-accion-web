@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Películas de Acción 🔥 | Top Hits</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #eee;
+      line-height: 1.6;
+      padding: 30px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #ff3f3f;
+      text-shadow: 2px 2px 8px #aa0000;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #bbb;
+      font-style: italic;
+    }
+    main {
+      max-width: 900px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    article {
+      background: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 15px rgba(255, 63, 63, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    article:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(255, 63, 63, 0.6);
+    }
+    img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 3px solid #ff3f3f;
+    }
+    article h2 {
+      margin: 15px;
+      color: #ff6f6f;
+      font-size: 1.5rem;
+    }
+    article p {
+      margin: 0 15px 15px 15px;
+      color: #ccc;
+      font-size: 1rem;
+      min-height: 60px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+      text-align: center;
+      width: 100%;
+      border-top: 1px solid #333;
+      padding-top: 15px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      main {
+        grid-template-columns: 1fr;
+      }
+      article img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Películas de Acción 🔥</h1>
+    <p>Los mejores éxitos que no puedes perderte</p>
+  </header>
+  <main>
+    <article>
+      <img src="https://m.media-amazon.com/images/I/71kV4L5vdfL._AC_SY679_.jpg" alt="John Wick 3" />
+      <h2>John Wick 3: Parabellum</h2>
+      <p>El implacable asesino John Wick está huyendo de la mafia con una recompensa por su cabeza.</p>
+    </article>
+    <article>
+      <img src="https://m.media-amazon.com/images/I/71K1F9HLNlL._AC_SY679_.jpg" alt="Mad Max: Fury Road" />
+      <h2>Mad Max: Fury Road</h2>
+      <p>Una explosiva persecución en un desierto post-apocalíptico llena de acción y adrenalina pura.</p>
+    </article>
+    <article>
+      <img src="https://m.media-amazon.com/images/I/81c4FudjwDL._AC_SY679_.jpg" alt="Extraction" />
+      <h2>Extraction</h2>
+      <p>Un mercenario con habilidades letales debe rescatar al hijo secuestrado de un criminal internacional.</p>
+    </article>
+    <article>
+      <img src="https://m.media-amazon.com/images/I/81h2gWPTYJL._AC_SY679_.jpg" alt="The Dark Knight" />
+      <h2>The Dark Knight</h2>
+      <p>Batman enfrenta al caos encarnado en el Joker para salvar Gotham City del desastre.</p>
+    </article>
+  </main>
+  <footer>
+    © 2025 Películas de Acción | Desplegado con Vercel y GitHub
+  </footer>
+</body>
+</html>
